@@ -13,6 +13,7 @@
 
         <module>hateoasspring</module>
         <module>jackson</module>
+        <module>spring-gemfire-tutorial</module>
     </modules>
 
     <build>
