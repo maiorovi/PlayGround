@@ -1,4 +1,4 @@
-package app.regions;
+package app1.regions;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;

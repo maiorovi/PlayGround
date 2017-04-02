@@ -1,6 +1,6 @@
-package app.repository;
+package app1.repository;
 
-import app.regions.Person;
+import app1.regions.Person;
 import org.springframework.data.repository.CrudRepository;
 
 public interface PersonRepository extends CrudRepository<Person, String> {

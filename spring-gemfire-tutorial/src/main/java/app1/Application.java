@@ -1,7 +1,7 @@
-package app;
+package app1;
 
-import app.regions.Person;
-import app.repository.PersonRepository;
+import app1.regions.Person;
+import app1.repository.PersonRepository;
 import com.gemstone.gemfire.cache.GemFireCache;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 @Configuration
-@EnableGemfireRepositories(basePackages = {"app"})
+@EnableGemfireRepositories(basePackages = {"app1"})
 @SuppressWarnings("unused")
 public class Application implements CommandLineRunner {
 
