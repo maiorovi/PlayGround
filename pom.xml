@@ -15,6 +15,7 @@
         <module>jackson</module>
         <module>spring-gemfire-tutorial</module>
         <module>lombokstarting</module>
+        <module>hibernate</module>
     </modules>
 
     <dependencies>
