@@ -40,7 +40,8 @@ public class Student {
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	// collections compared by identity(using ==)
+	//objects compared by equality(using equals)
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
