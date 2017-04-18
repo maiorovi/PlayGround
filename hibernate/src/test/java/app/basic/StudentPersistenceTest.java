@@ -10,6 +10,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.validation.ConstraintViolationException;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class StudentPersistenceTest {
@@ -48,10 +49,18 @@ public class StudentPersistenceTest {
 
 		em.getTransaction().begin();
 
-		Throwable exception = assertThrows(ConstraintViolationException.class, () -> {
+//		Throwable exception = assertThrows(ConstraintViolationException.class, () -> {
+//			em.persist(student);
+//			em.getTransaction().commit();
+//		}); this is junit approach to exception verifying
+
+		//this is one is assertJ
+
+		assertThatThrownBy(() -> {
 			em.persist(student);
 			em.getTransaction().commit();
-		});
+		}).isExactlyInstanceOf(ConstraintViolationException.class);
+
 
 		em.close();
 	}
