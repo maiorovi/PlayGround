@@ -11,7 +11,7 @@ public class Demo {
 
         EntityManager em = emf.createEntityManager();
 
-        Student student = new Student("Egor");
+        Student student = createStudent();
 
         em.getTransaction().begin();
 
@@ -20,5 +20,11 @@ public class Demo {
         em.getTransaction().commit();
 
         em.close();
+    }
+
+    private static Student createStudent() {
+        Student student = new Student(null);
+
+        return student;
     }
 }
