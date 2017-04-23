@@ -7,7 +7,7 @@ import javax.persistence.EntityManagerFactory;
 
 public class Demo {
     public static void main(String[] args) {
-        EntityManagerFactory emf = EntityManagerFactoryProvider.provide();
+        EntityManagerFactory emf = EntityManagerFactoryProvider.provide("derby-embedded");
 
         EntityManager em = emf.createEntityManager();
 

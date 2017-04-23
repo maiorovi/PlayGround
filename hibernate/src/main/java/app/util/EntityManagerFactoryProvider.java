@@ -9,9 +9,9 @@ public class EntityManagerFactoryProvider {
 
     private static EntityManagerFactory entityManagerFactory;
 
-    public static EntityManagerFactory provide() {
+    public static EntityManagerFactory provide(String persistenceUnit) {
         if (entityManagerFactory == null) {
-            entityManagerFactory = Persistence.createEntityManagerFactory("first");
+            entityManagerFactory = Persistence.createEntityManagerFactory(persistenceUnit);
             return entityManagerFactory;
         }
 
