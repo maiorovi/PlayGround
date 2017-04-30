@@ -5,8 +5,8 @@ import javax.persistence.*;
 @Entity
 public class User {
 	@Id
-	@GeneratedValue(strategy = GenerationType.TABLE)
-	private Long id;
+	@GeneratedValue(generator = "ID_GENERATOR")
+	private String id;
 	@Column(name = "user_name")
 	private String userName;
 
