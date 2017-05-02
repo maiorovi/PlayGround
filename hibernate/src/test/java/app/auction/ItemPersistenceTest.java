@@ -32,7 +32,7 @@ public class ItemPersistenceTest {
 		Item item = new Item("Porshe Carrera");
 		Bid bid1 = new Bid(20000, item);
 		Bid bid2 = new Bid(25000, item);
-		Bid bid3 = new Bid(40000, item);
+		Bid bid3 = new Bid(45000, item);
 
 		entityManager.getTransaction().begin();
 
@@ -48,6 +48,7 @@ public class ItemPersistenceTest {
 							.getSingleResult();
 
 		Set<Bid> bids = loadedItem.getBids();
+		System.out.println(loadedItem.getAverageBidAmount());
 
 		for(Bid bid : bids) {
 			System.out.println(bid);
@@ -58,5 +59,6 @@ public class ItemPersistenceTest {
 		assertThat(loadedItem.getBids())
 				.hasSize(3)
 				.contains(bid1, bid2, bid3);
+		assertThat(loadedItem.getAverageBidAmount()).isEqualTo(30000.0);
 	}
 }

@@ -1,5 +1,7 @@
 package app.auction;
 
+import org.hibernate.annotations.Formula;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -11,6 +13,8 @@ public class Item {
 	@GeneratedValue(generator = "ID_GENERATOR")
 	private String id;
 	private String name;
+	@Formula(value = "(select avg(b.amount) from bid b where b.item_id=id)")
+	private double averageBidAmount;
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "item", cascade = CascadeType.ALL)
 	private Set<Bid> bids = new HashSet<>();
 
@@ -38,5 +42,9 @@ public class Item {
 
 	public void addBid(Bid bid) {
 		bids.add(bid);
+	}
+
+	public double getAverageBidAmount() {
+		return averageBidAmount;
 	}
 }
