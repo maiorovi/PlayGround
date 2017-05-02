@@ -1,5 +1,6 @@
 package app.auction;
 
+import app.auction.enums.AuctionType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -59,6 +60,8 @@ public class ItemPersistenceTest {
 		assertThat(loadedItem.getBids())
 				.hasSize(3)
 				.contains(bid1, bid2, bid3);
-		assertThat(loadedItem.getAverageBidAmount()).isEqualTo(30000.0);
+
+		assertThat(loadedItem.getAuctionType()).isEqualTo(AuctionType.HIGHEST_BID);
+//		assertThat(loadedItem.getAverageBidAmount()).isEqualTo(30000.0);
 	}
 }

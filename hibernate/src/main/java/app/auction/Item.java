@@ -1,5 +1,6 @@
 package app.auction;
 
+import app.auction.enums.AuctionType;
 import org.hibernate.annotations.Formula;
 
 import javax.persistence.*;
@@ -17,6 +18,8 @@ public class Item {
 	private double averageBidAmount;
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "item", cascade = CascadeType.ALL)
 	private Set<Bid> bids = new HashSet<>();
+	@Enumerated
+	private AuctionType auctionType = AuctionType.HIGHEST_BID;
 
 	protected Item(){}
 
@@ -46,5 +49,9 @@ public class Item {
 
 	public double getAverageBidAmount() {
 		return averageBidAmount;
+	}
+
+	public AuctionType getAuctionType() {
+		return auctionType;
 	}
 }

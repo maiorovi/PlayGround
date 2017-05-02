@@ -11,10 +11,19 @@ public class User {
 	private String userName;
 	@Access(AccessType.PROPERTY)
 	private int age;
+	@Embedded
+	private Address homeAddress;
 
 	public User(String userName, int age) {
 		this.userName = userName;
 		this.age = age;
+		this.homeAddress = new Address("Unknown", "Unknown", "Unknown");
+	}
+
+	public User(String userName, int age, Address homeAddress) {
+		this.userName = userName;
+		this.age = age;
+		this.homeAddress = homeAddress;
 	}
 
 	public String getUserName() {
