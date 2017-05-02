@@ -22,7 +22,7 @@ public class UserPersistenceTest {
 
 	@Test
 	void persistsRegularUser() {
-		User user = new User("Egor");
+		User user = new User("Egor", 26);
 
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		entityManager.getTransaction().begin();
