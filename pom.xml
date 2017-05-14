@@ -16,13 +16,14 @@
         <module>spring-gemfire-tutorial</module>
         <module>lombokstarting</module>
         <module>hibernate</module>
+        <module>spring-integration-in-action</module>
     </modules>
 
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.0.0-M3</version>
+            <version>5.0.0-M4</version>
         </dependency>
         <dependency>
             <groupId>org.assertj</groupId>
