@@ -17,6 +17,7 @@
         <module>lombokstarting</module>
         <module>hibernate</module>
         <module>spring-integration-in-action</module>
+        <module>openl-getting-started</module>
     </modules>
 
     <dependencies>

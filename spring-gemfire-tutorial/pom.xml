@@ -42,6 +42,7 @@
             <artifactId>spring-beans</artifactId>
             <version>4.3.7.RELEASE</version>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -52,4 +53,14 @@
             </plugin>
         </plugins>
     </build>
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>central</id>
+            <name>libs-release</name>
+            <url>http://repo.springsource.org/libs-release</url>
+        </repository>
+    </repositories>
 </project>
