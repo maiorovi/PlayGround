@@ -18,6 +18,7 @@
         <module>hibernate</module>
         <module>spring-integration-in-action</module>
         <module>droos-in-action</module>
+        <module>spring-quartz-tutorial</module>
     </modules>
 
     <dependencies>
