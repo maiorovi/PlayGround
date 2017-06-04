@@ -26,7 +26,7 @@ public class DefaultRestController {
 	@RequestMapping(value = "user", method = RequestMethod.GET, produces = {"application/xml", "application/json"})
 	public User getUser() {
 		Book book = new Book();
-		book.setAuthor("author");
+		book.setAuthor("Author");
 		book.setBookName("bookName");
 
 		User user = new User("Egor", 26);
