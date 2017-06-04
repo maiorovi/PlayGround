@@ -19,6 +19,7 @@
         <module>spring-integration-in-action</module>
         <module>droos-in-action</module>
         <module>spring-quartz-tutorial</module>
+        <module>spring-cloud-class</module>
     </modules>
 
     <dependencies>
