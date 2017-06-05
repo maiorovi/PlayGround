@@ -20,6 +20,7 @@
         <module>droos-in-action</module>
         <module>spring-quartz-tutorial</module>
         <module>spring-cloud-class</module>
+        <module>spring-cloud-config-server</module>
     </modules>
 
     <dependencies>
