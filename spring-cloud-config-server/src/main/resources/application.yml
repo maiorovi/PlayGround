@@ -1,9 +1,11 @@
-info:
-  component: Config Samples
-endpoints:
-  restart:
-    enabled: true
-logging:
-  levels:
-    org.springframework.boot.env.PropertySourcesLoader: TRACE
-    org.springframework.web: DEBUG
+#this can be used to use file on class path as a local repository
+#spring:
+#  profiles:
+#    active: native
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/maiorovi/ExternalConfigRepo
