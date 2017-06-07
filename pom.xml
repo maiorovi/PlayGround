@@ -21,6 +21,7 @@
         <module>spring-quartz-tutorial</module>
         <module>spring-cloud-class</module>
         <module>spring-cloud-config-server</module>
+        <module>eureka-server-trial</module>
     </modules>
 
     <dependencies>
