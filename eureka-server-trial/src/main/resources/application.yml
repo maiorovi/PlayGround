@@ -1,6 +1,10 @@
 server:
   port: ${PORT:8761}
 
+spring:
+  application:
+    name: lab-4-eureka-server
+
 eureka:
   client:
     registerWithEureka: false
