@@ -23,6 +23,7 @@
         <module>spring-cloud-config-server</module>
         <module>eureka-server-trial</module>
         <module>eureka-client-1</module>
+        <module>embedded-jetty-container-sample</module>
     </modules>
 
     <dependencies>
