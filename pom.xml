@@ -27,6 +27,7 @@
         <module>eureka-4-verb-client</module>
         <module>eureka-4-article</module>
         <module>eureka-4-adjective</module>
+        <module>eureka-4-noun</module>
     </modules>
 
     <dependencies>

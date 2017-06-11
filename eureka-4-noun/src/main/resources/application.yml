@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: lab-4-noun
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+words: boat,book,vote,seat,backpack,partition,groundhog
+
+server:
+  port: ${PORT:${SERVER_PORT:0}}
