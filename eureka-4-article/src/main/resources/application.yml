@@ -1,0 +1,13 @@
+words: a,the
+
+spring:
+  application:
+    name: lab-4-article
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: ${PORT:${SERVER_PORT:0}}

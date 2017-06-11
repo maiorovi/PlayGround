@@ -24,6 +24,8 @@
         <module>eureka-server-trial</module>
         <module>eureka-client-1</module>
         <module>embedded-jetty-container-sample</module>
+        <module>eureka-4-verb-client</module>
+        <module>eureka-4-article</module>
     </modules>
 
     <dependencies>

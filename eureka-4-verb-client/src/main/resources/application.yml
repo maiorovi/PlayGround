@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: lab-4-verb
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+words: ran,knew,had,saw,bought
+
+server:
+  port: ${PORT:${SERVER_PORT:0}}
