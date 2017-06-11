@@ -28,6 +28,7 @@
         <module>eureka-4-article</module>
         <module>eureka-4-adjective</module>
         <module>eureka-4-noun</module>
+        <module>eureka-4-sentence</module>
     </modules>
 
     <dependencies>
