@@ -31,6 +31,7 @@
         <module>eureka-4-sentence</module>
         <module>ribbon-sample</module>
         <module>neo4j-in-action</module>
+        <module>jdbc-driver-examples</module>
     </modules>
 
     <dependencies>
