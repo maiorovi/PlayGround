@@ -25,4 +25,12 @@ public class OracleJdbcOperationsFacade {
 			throw new RuntimeException(e);
 		}
 	}
+
+	public String sayHello(String name) {
+		try {
+			return jdbcDriverOverview.callHelloProcedure(name);
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
 }

@@ -20,5 +20,7 @@ public class Demo {
 		String output = employeeList.stream().map(Employee::toString).collect(Collectors.joining("\n"));
 
 		System.out.println(output);
+
+		System.out.println(oracleJdbcOperationsFacade.sayHello("QQQ"));
 	}
 }
