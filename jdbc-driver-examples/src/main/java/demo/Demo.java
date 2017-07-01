@@ -19,8 +19,10 @@ public class Demo {
 		List<Employee> employeeList = oracleJdbcOperationsFacade.getAllEmployees();
 		String output = employeeList.stream().map(Employee::toString).collect(Collectors.joining("\n"));
 
-		System.out.println(output);
+//		System.out.println(output);
 
 		System.out.println(oracleJdbcOperationsFacade.sayHello("QQQ"));
+//		System.out.println(oracleJdbcOperationsFacade.getSum().stream().map(Employee::toString).collect(Collectors.joining("\n")));
+		System.out.println(oracleJdbcOperationsFacade.getSum(12, 15));
 	}
 }
