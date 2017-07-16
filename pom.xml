@@ -32,6 +32,7 @@
         <module>ribbon-sample</module>
         <module>neo4j-in-action</module>
         <module>jdbc-driver-examples</module>
+        <module>oca-preparation</module>
     </modules>
 
     <dependencies>

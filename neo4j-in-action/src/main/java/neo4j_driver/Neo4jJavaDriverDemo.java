@@ -1,6 +1,8 @@
 package neo4j_driver;
 
 import org.neo4j.driver.v1.*;
+import org.neo4j.graphdb.GraphDatabaseService;
+import org.neo4j.kernel.impl.factory.GraphDatabaseFacade;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +22,8 @@ public class Neo4jJavaDriverDemo {
 	public void createSession() {
 		driver = GraphDatabase.driver("bolt://localhost:7687", AuthTokens.basic( "neo4j", "neo4j" ));
 		session = driver.session();
+		GraphDatabaseService graphDatabaseService = new GraphDatabaseFacade();
+
 	}
 
 	public void readDataAndProcess() {
