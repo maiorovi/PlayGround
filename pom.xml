@@ -33,6 +33,7 @@
         <module>neo4j-in-action</module>
         <module>jdbc-driver-examples</module>
         <module>oca-preparation</module>
+        <module>archiver-lib</module>
     </modules>
 
     <dependencies>
