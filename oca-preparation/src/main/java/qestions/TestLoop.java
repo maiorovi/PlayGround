@@ -58,5 +58,6 @@ class MyExamCloudOCAJP8 {
         sb.append("808");
         str.concat(sb.toString());
         System.out.println(str);
+
     }
 }
